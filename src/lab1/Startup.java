@@ -31,5 +31,6 @@ public class Startup {
             
             //Liskov substitution principle is useful to ensure that behavior
             // does not change
+            //This architecture allows for flexible use of methods and a simpler means of sharing properties.
         }
 }

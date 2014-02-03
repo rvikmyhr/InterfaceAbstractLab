@@ -1,5 +1,7 @@
 package lab1;
 
+import javax.swing.JOptionPane;
+
 /**
  * Describe responsibilities here.
  *
@@ -19,6 +21,11 @@ public class IntroJavaCourse extends Course {
     }
 
     public void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: prerequisites cannot be null of empty string");
+            System.exit(0);
+        }
         this.prerequisites = prerequisites;
-    }
+    }   
 }

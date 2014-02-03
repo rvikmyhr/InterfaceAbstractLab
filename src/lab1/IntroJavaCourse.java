@@ -10,8 +10,8 @@ public class IntroJavaCourse extends Course {
     private String prerequisites;
 
     public IntroJavaCourse(String courseName, String courseNumber) {
-        setCourseName(courseName);
-        setCourseNumber(courseNumber);
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
     }
 
     public String getPrerequisites() {
